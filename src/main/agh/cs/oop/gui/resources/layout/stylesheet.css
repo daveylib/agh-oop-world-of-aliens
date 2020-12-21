@@ -1,0 +1,234 @@
+/* general */
+
+* {
+    -fx-base: rgba(104, 107, 127, 0.9); /* gray background for containers with text */
+    -fx-base2: rgba(104, 107, 127, 0.95); /* gray background for button */
+}
+
+#windowBg {
+    -fx-background-image: url("../images/alien_world_bg.jpg");
+    -fx-background-size: cover;
+    -fx-background-position: center center;
+}
+
+.gameButton {
+    -fx-background-color: -fx-base2;
+    -fx-text-fill: #000;
+    -fx-background-radius: 10;
+}
+
+.gameButton:hover {
+    -fx-text-fill: #fc72da;
+}
+
+.copyrightText {
+    -fx-text-fill: #ffffff;
+}
+
+/* menu.fxml */
+
+#menuRunGroup {
+    -fx-alignment: center;
+    -fx-spacing: 20;
+}
+
+#menuButtonRun {
+    -fx-font-size: 25;
+    -fx-padding: 20 30;
+}
+
+#menuButtonSettings {
+    -fx-font-size: 18;
+    -fx-padding: 10 20;
+}
+
+#showTwoMaps {
+    -fx-font-size: 15;
+    -fx-text-fill: #fff;
+}
+
+/* settings.fxml */
+
+#settingsContainer {
+    -fx-padding: 20;
+    -fx-spacing: 20;
+}
+
+.settingsHBox {
+    -fx-spacing: 10;
+}
+
+.settingsVBox {
+    -fx-min-width: 300;
+    -fx-max-width: 300;
+    -fx-spacing: 5;
+}
+
+.settingsControl {
+    -fx-padding: 10;
+    -fx-text-fill: #000;
+    -fx-background-color: -fx-base;
+    -fx-font-size: 15;
+    -fx-background-radius: 10;
+}
+
+.settingsVBoxSlider {
+    -fx-min-width: 600;
+    -fx-max-width: 600;
+    -fx-spacing: 5;
+}
+
+.settingsSlider {
+    -fx-min-width: 300;
+    -fx-max-width: 300;
+    -fx-background-color: -fx-base;
+}
+
+.settingsSlider .axis {
+    -fx-tick-label-fill: #000;
+}
+
+#settingsButtonsContainer {
+    -fx-alignment: center;
+    -fx-spacing: 50;
+    -fx-padding: 0 0 20 0;
+}
+
+.settingsButton {
+    -fx-font-size: 20;
+    -fx-padding: 15 25;
+}
+
+/* simulation.fxml */
+
+#backButton {
+    -fx-padding: 20 0 0 20;
+}
+
+#simulationsContainer {
+    -fx-padding: 20;
+    -fx-spacing: 20;
+}
+
+.root {
+    -fx-padding: 20;
+    cell-color: white;
+    cell-border-color: black;
+}
+
+/* GAME CONTROLS */
+
+.gameBoxControls {
+    -fx-spacing: 10;
+    -fx-background-color: transparent;
+    -fx-min-width: 380;
+    -fx-max-width: 380;
+}
+
+#gameControls {
+    -fx-spacing: 20;
+}
+
+#dayDurationSlider {
+    -fx-background-color: -fx-base;
+    -fx-text-fill: #000;
+    -fx-padding: 5 10;
+    -fx-background-radius: 5;
+    -fx-pref-width: 250;
+    -fx-min-width: 250;
+}
+
+#dayDurationSlider .axis {
+    -fx-tick-label-fill: #000;
+}
+
+#dayDurationLabel {
+    -fx-padding: 10;
+    -fx-background-color: -fx-base;
+    -fx-text-fill: #000;
+    -fx-background-radius: 5;
+}
+
+#gameStats {
+    -fx-background-color: -fx-base;
+    -fx-background-radius: 5;
+    -fx-fill-height: true;
+}
+
+.gameStatsLabel {
+    -fx-padding: 5 10;
+    -fx-text-fill: #000;
+    -fx-wrap-text: true;
+}
+
+.gameAliensList {
+    -fx-background-color: transparent;
+    -fx-fit-to-height: true;
+    -fx-wrap-text: true;
+}
+
+.gameAliensList .viewport {
+    -fx-background-color: transparent;
+}
+
+.gameAliensListContainer {
+    -fx-padding: 10;
+    -fx-background-color: -fx-base;
+    -fx-background-radius: 5;
+    -fx-spacing: 5;
+    -fx-fill-width: true;
+    -fx-fill-height: true;
+    -fx-wrap-text: true;
+}
+
+.gameAliensListLabel {
+    -fx-text-fill: #000;
+    -fx-wrap-text: true;
+}
+
+.gameAliensListStopFollowing {
+    -fx-background-color: -fx-base;
+    -fx-text-fill: #000;
+    -fx-padding: 0;
+}
+
+.gameAliensListStopFollowing:hover {
+    -fx-text-fill: #fc72da;
+}
+
+/* GAME MAP */
+
+.gameScrollPane {
+    -fx-background-color: transparent;
+}
+
+.gameScrollPane .viewport {
+    -fx-background-color: transparent;
+}
+
+.gameGrid {
+    -fx-background-color: cell-border-color, cell-color;
+    -fx-background-insets: 0, 1 1 0 0;
+    -fx-padding: 1;
+}
+
+.gameField {
+    -fx-background-color: cell-border-color, #1947AF;
+    -fx-background-insets: 0, 0 0 1 1;
+}
+
+.gameFieldJungle {
+    -fx-background-color: cell-border-color, #397460;
+    -fx-background-insets: 0, 0 0 1 1;
+}
+
+.gameFieldLabel {
+    -fx-text-fill: #000;
+    -fx-padding: 0 0 0 2;
+}
+
+.gameMapInfo {
+    -fx-background-color: -fx-base;
+    -fx-text-fill: #000;
+    -fx-padding: 5;
+}

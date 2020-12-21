@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.CheckBox?>
+
+<VBox fx:controller="agh.cs.oop.gui.MenuController" xmlns:fx="http://javafx.com/fxml" id="windowBg">
+    <VBox VBox.vgrow="ALWAYS"/>
+
+    <VBox id="menuRunGroup">
+        <Button id="menuButtonRun" styleClass="gameButton" text="Run simulation" onAction="#runSimulation"/>
+        <Button id="menuButtonSettings" styleClass="gameButton" text="Settings" onAction="#showSettings"/>
+    </VBox>
+
+    <VBox VBox.vgrow="ALWAYS"/>
+
+    <HBox>
+        <CheckBox fx:id="showTwoMaps" text="Show two maps simultaneously"/>
+
+        <HBox HBox.hgrow="ALWAYS"/>
+
+        <VBox>
+            <Label styleClass="copyrightText" text="Game made by Dawid Liberda"/>
+            <Label styleClass="copyrightText" text="Background made by vectorpouch from Freepik.com"/>
+        </VBox>
+    </HBox>
+</VBox>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+<VBox fx:controller="agh.cs.oop.gui.SimulationController" xmlns:fx="http://javafx.com/fxml" id="windowBg">
+    <VBox id="backButton">
+        <Button styleClass="gameButton" text="Back" onAction="#backToMenu"/>
+    </VBox>
+
+    <VBox VBox.vgrow="ALWAYS">
+        <HBox fx:id="simulationsContainer" id="simulationsContainer"/>
+    </VBox>
+
+    <HBox>
+        <HBox HBox.hgrow="ALWAYS"/>
+
+        <VBox>
+            <Label styleClass="copyrightText" text="Game made by Dawid Liberda"/>
+            <Label styleClass="copyrightText" text="Background made by vectorpouch from Freepik.com"/>
+            <Label styleClass="copyrightText" text="Icons made by Freepik &amp; Smashicons from Flaticon.com"/>
+        </VBox>
+    </HBox>
+</VBox>
