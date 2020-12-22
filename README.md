@@ -10,7 +10,7 @@
 
 The Amazing World of Aliens is an assignment for object-oriented programming course at University Of Science and Technology in Kraków and also my own interpretation of evolution simulator. The game represents an environment of some distant planet in the universe with living aliens and growing mushrooms. There is also some kind of a jungle in the center of a map where mushrooms grow faster.
 
-![](https://github.com/daveylib/agh-oop-world-of-aliens/screenshots/simulation.png)
+![](https://raw.githubusercontent.com/daveylib/agh-oop-world-of-aliens/master/screenshots/simulation.png)
 
 ### Technical details of the project
 
@@ -47,7 +47,7 @@ If alien stands on a field with mushroom it consumes the plant and gains some po
 
 ### Settings
 
-![](https://github.com/daveylib/agh-oop-world-of-aliens/screenshots/settings.png)
+![](https://raw.githubusercontent.com/daveylib/agh-oop-world-of-aliens/master/screenshots/settings.png)
 
 ### Stats of the simulation
 
@@ -64,7 +64,7 @@ The information changes every day and presents the current situation.
 
 ### Generating stats of the simulation
 
-![](https://github.com/daveylib/agh-oop-world-of-aliens/screenshots/stats.png)
+![](https://raw.githubusercontent.com/daveylib/agh-oop-world-of-aliens/master/screenshots/stats.png)
 
 Below the map you can find a button titled **Generate stats from the simulation**. When you click it a new window is displayed. There you can specify a number of days since the beginning of the simulation and path with a name of the file to which stats will be saved.
 
@@ -78,12 +78,12 @@ In every moment you can stop following the alien by clicking **X** next to it.
 
 ### Showing aliens with dominant genotype
 
-![](https://github.com/daveylib/agh-oop-world-of-aliens/screenshots/dominant_genotype.png)
+![](https://raw.githubusercontent.com/daveylib/agh-oop-world-of-aliens/master/screenshots/dominant_genotype.png)
 
 Below the map you can see also a button titled **Show aliens with dominant genotype**. By clicking it you display a new window with a list of all aliens that have dominant genotype.
 
 ### Simulation with two maps
 
-![](https://github.com/daveylib/agh-oop-world-of-aliens/screenshots/simulation_two_maps.png)
+![](https://raw.githubusercontent.com/daveylib/agh-oop-world-of-aliens/master/screenshots/simulation_two_maps.png)
 
 In the main scene of the game you can turn on option of showing two maps simultaneously. In fact they are two separate and different simulations.
