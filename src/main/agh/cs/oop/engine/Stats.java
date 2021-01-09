@@ -1,7 +1,7 @@
 package agh.cs.oop.engine;
 
 public class Stats {
-    public int days;
+    public int days;    // public?
     public double avgAliensQuantity;
     public double avgMushroomsQuantity;
     public double avgAliveEnergy;

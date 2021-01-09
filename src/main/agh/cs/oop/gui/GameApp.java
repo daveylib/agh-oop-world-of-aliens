@@ -1,5 +1,5 @@
 package agh.cs.oop.gui;
-
+// zasoby powinny być całkowicie oddzielone od kodu, czyli resources na tym samym poziomie co src
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;

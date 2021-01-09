@@ -91,11 +91,11 @@ public class Alien {
     }
 
     public String getPrettyGenotype() {
-        return Arrays.toString(this.genotype.getGenotype());
+        return Arrays.toString(this.genotype.getGenotype());    // this.genotype.toString()?
     }
 
     // Get preferred rotation from genotype
-    public byte getPrefRotation() {
+    public byte getPrefRotation() { // raczej random niż pref
         byte[] genotype = this.genotype.getGenotype();
         byte randomIdx = (byte) (Math.random() * 32);
 
@@ -107,7 +107,7 @@ public class Alien {
     }
 
     // Move alien forward or rotate right
-    public void move(MoveDirection direction) {
+    public void move(MoveDirection direction) { // zwierzę miało samo wybierać ruch na podstawie genów
         switch (direction) {
             case FORWARD:
                 Vector2d newPosition = this.getPosition().add(this.orientation.toUnitVector());

@@ -29,7 +29,7 @@ public class GameMap {
     }
 
     // Calculate dimensions of a rectangular for the jungle and prepare vectors for corners
-    private void calcJungleSize() throws RuntimeException {
+    private void calcJungleSize() throws RuntimeException { // typ wyjątku nic nie mówi (+ kompilaor ignoruje tę deklarację, bo RuntimeException jest unchecked)
         int minMapSide = Math.min(this.mapWidth, this.mapHeight);
 
         // Calculate area of the jungle and find factors of this number
@@ -250,7 +250,7 @@ public class GameMap {
 
     // Correct position if it is placed outside the jungle
     private Vector2d correctPositionInJungle(Vector2d position) {
-        int jungleWidth = this.jungleLowerRight.getX() - this.jungleUpperLeft.getX();
+        int jungleWidth = this.jungleLowerRight.getX() - this.jungleUpperLeft.getX();   // może warto to raz policzyć?
         int jungleHeight = this.jungleLowerRight.getY() - this.jungleUpperLeft.getY();
 
         int x = position.getX();
@@ -267,7 +267,7 @@ public class GameMap {
 
     // Get a free random field from the map which is inside the jungle
     public Vector2d getRandomFreeInsideJungle() {
-        int jungleWidth = this.jungleLowerRight.getX() - this.jungleUpperLeft.getX();
+        int jungleWidth = this.jungleLowerRight.getX() - this.jungleUpperLeft.getX();   // j.w.
         int jungleHeight = this.jungleLowerRight.getY() - this.jungleUpperLeft.getY();
 
         int posX = (int) ((Math.random() * (jungleWidth + 1)) + this.jungleUpperLeft.getX());
@@ -277,7 +277,7 @@ public class GameMap {
 
         for (int x = 0; x < jungleWidth && !isFree(randomPosition); x++) {
             for (int y = 0; y < jungleHeight && !isFree(randomPosition); y++) {
-                randomPosition = this.correctPositionInJungle(randomPosition.add(WorldDirection.NORTH_EAST.toUnitVector()));
+                randomPosition = this.correctPositionInJungle(randomPosition.add(WorldDirection.NORTH_EAST.toUnitVector()));    // to nie jest losowanie
 
                 if (y == jungleHeight - 1) randomPosition = this.correctPositionInJungle(randomPosition.add(WorldDirection.EAST.toUnitVector()));
             }

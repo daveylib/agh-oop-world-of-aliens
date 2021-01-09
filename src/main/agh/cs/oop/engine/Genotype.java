@@ -3,7 +3,7 @@ package agh.cs.oop.engine;
 import java.util.Arrays;
 
 public class Genotype {
-    private long genotype = 0;
+    private long genotype = 0;  // co Pan chce osiągnąć trzymając genotyp w longu?
 
     public Genotype(byte[] genotype) {
         this.setGenotype(genotype);
@@ -45,7 +45,7 @@ public class Genotype {
             sum += gens[i];
         }
 
-        if (sum != 32) {
+        if (sum != 32) {    // jeśli ten warunek jest spełniony, to błąd jest w tej metodzie - już Pan sprawdzał długość tablicy
             throw new IllegalArgumentException("Quantity of all gens in genotype " + Arrays.toString(genotype) + " must equals 32");
         }
 
@@ -106,7 +106,7 @@ public class Genotype {
     public byte[] getGenotype() {
         byte[] genotypeArray = new byte[32];
 
-        byte currentIdx = 0;
+        byte currentIdx = 0;    // mam deja vu
         for (int gen = 0; gen < 8; gen++) {
             short howManyGens = this.getGen(gen);
 
@@ -145,7 +145,7 @@ public class Genotype {
         }
 
         long newGenotype = howMany << (whichOne * 5);
-        this.genotype |= newGenotype;
+        this.genotype |= newGenotype;   // czy mamy pewność, że te bity były zerowe?
     }
 
     // Cross genotype of alien with other one
@@ -186,7 +186,7 @@ public class Genotype {
     }
 
     // Pretty print for given genotype as long number
-    public static String prettyPrintOf(long genotype) {
+    public static String prettyPrintOf(long genotype) { // nie rozumiem celu istnienia tej metody
         Genotype genotypeObj = new Genotype(genotype);
 
         return genotypeObj.toString();

@@ -129,7 +129,7 @@ public class SimulationStats {
     }
 
     public static void generateStats(ObservableList<SimulationStats> simulationStats, int currentDay) {
-        VBox sceneContainer = new VBox();
+        VBox sceneContainer = new VBox();   // jesteśmy w engine nie gui
         sceneContainer.setPadding(new Insets(10));
         sceneContainer.setSpacing(15);
 

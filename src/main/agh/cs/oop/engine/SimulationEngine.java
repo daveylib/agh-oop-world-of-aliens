@@ -173,7 +173,7 @@ public class SimulationEngine {
     }
 
     // Iterate through all aliens, remove dead and move alive ones
-    private void removeDeadMoveAlive() {
+    private void removeDeadMoveAlive() {    // metoda powinna wykonywać jedno zadanie
         Iterator<Alien> iterator = this.aliveAliens.iterator();
 
         while (iterator.hasNext()) {
